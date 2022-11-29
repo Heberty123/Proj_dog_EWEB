@@ -9,16 +9,18 @@ import { EndpointDogService } from '../endpoint-dog.service';
 })
 export class DogComponent implements OnInit {
 
-  dogs: Dog[] = [];
+  dog?: Dog;
 
   constructor(private dogService: EndpointDogService) { }
 
   ngOnInit(): void {
+    this.getDog();
   }
 
   getDog(): void {
     this.dogService.getDog()
-          .subscribe(dog => this.dogs.push(dog))
+          .subscribe(dog => this.dog = dog)
+
   }
 
 }
