@@ -1,0 +1,12 @@
+.title{
+    height: 10vh;
+    width: 100%;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-all{
+    background-color: antiquewhite;
+}

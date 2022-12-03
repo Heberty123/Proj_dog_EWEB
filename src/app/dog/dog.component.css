@@ -1,0 +1,38 @@
+.box-dog{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.box-img{
+    width: 50%;
+    height: 70%;
+    padding: 20px;
+    background-color: aquamarine;
+    border-radius: 8px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.box-dog button{
+    width: 30%;
+    padding: 20px;
+    font-size: 2rem;
+    border: none;
+    background-image: linear-gradient(to right, rgb(60, 124, 150), rgb(93, 145, 187));
+    border-radius: 8px;
+}
+
+.box-dog button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(37, 80, 129), rgb(68, 85, 160));
+}
+
